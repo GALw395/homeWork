@@ -1,8 +1,21 @@
-.burgerMenuIcon {
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 30px;
+    background-color: #fff;
+    color: black;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.header {
+.burgerMenuIcon {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
 }
 
 .header h1 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
 }
