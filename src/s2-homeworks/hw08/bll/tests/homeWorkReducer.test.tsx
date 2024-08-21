@@ -6,12 +6,12 @@ let initialState: UserType[]
 
 beforeEach(() => {
     initialState = [
-        { _id: 0, name: 'Кот', age: 3 },
-        { _id: 1, name: 'Александр', age: 66 },
-        { _id: 2, name: 'Коля', age: 16 },
-        { _id: 3, name: 'Виктор', age: 44 },
-        { _id: 4, name: 'Дмитрий', age: 40 },
-        { _id: 5, name: 'Ирина', age: 55 },
+        { _id: 0, name: 'Лера', age: 17 },
+        { _id: 1, name: 'Лена', age: 22 },
+        { _id: 2, name: 'Настя', age: 16 },
+        { _id: 3, name: 'Алеся', age: 24 },
+        { _id: 4, name: 'Маша', age: 25 },
+        { _id: 5, name: 'Снежана', age: 21 },
     ]
 })
 
@@ -21,7 +21,7 @@ test('sort name up', () => {
         payload: 'up',
     })
 
-    expect(newState[0]._id).toBe(1)
+    expect(newState[0]._id).toBe(3)
 })
 test('sort name down', () => {
     const newState = homeWorkReducer(initialState, {
@@ -29,7 +29,7 @@ test('sort name down', () => {
         payload: 'down',
     })
 
-    expect(newState[0]._id).toBe(0)
+    expect(newState[0]._id).toBe(5)
 })
 test('check age 18', () => {
     const newState = homeWorkReducer(initialState, {
